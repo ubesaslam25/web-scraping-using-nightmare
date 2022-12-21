@@ -3,10 +3,10 @@ const nightmare = Nightmare({ show: true });
 const fs = require('fs');
 
 nightmare
-  .goto('https://www.bhaskar.com')
+  .goto('https://www.example.com')
   .wait('#root')
   .evaluate(() => {
-    let mailUrl = 'https://www.bhaskar.com';
+    let mailUrl = 'https://www.example.com';
     let ul = document.querySelectorAll('#root > div.eea00180 > div.df89d18b > div.f0e619a2 > div > div.ba1e62a6 > ul');
     let ulArray = [];
     ul.forEach((item) => {
